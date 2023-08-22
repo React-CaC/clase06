@@ -2,8 +2,11 @@
 import Button from "./components/button.js"
 import Input from "./components/input.js"
 import Video from "./components/video.js"
-import { mySuperArrayIfStrings, arrayDeInputs, nuevoArray } from "./datos/datos.js"
+import datos from "./datos/datos.js";
 
+const mySuperArrayIfStrings = datos.mySuperArrayIfStrings;
+const arrayDeInputs = datos.arrayDeInputs;
+const nuevoArray = datos.nuevoArray;
 //// Funciones
 function RenderButton(text) {
     let myButton = new Button('app', text);
